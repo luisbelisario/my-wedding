@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     max-width: 600px;
     min-height: 900px;
-    background-position-x: -80px;
+    background-position-x: -45px;
     background-position-y: -80px;
 }
 
@@ -46,9 +46,17 @@ body {
     margin-top: 10px;
     font-family: Catamaran, sans-serif;
     text-align: center;
-    max-width: 320px;
-    font-size: 1rem;
+    max-width: 250px;
     font-weight: lighter;
+}
+
+#local-data {
+    font-size: 18px;
+}
+
+#pix {
+    margin-top: 15px;
+    font-size: 12px;
 }
 
 .text-container a {
@@ -56,7 +64,7 @@ body {
     text-decoration: underline;
     font-family: Catamaran, sans-serif;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 12px;
     color: #000;
 }
 
@@ -159,7 +167,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 6px;
 }
 
