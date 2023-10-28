@@ -8,11 +8,13 @@ const firebaseConfig = {
     appId: "1:83093471982:web:43b0bfeec0003fc04429ff"
 };
 
+const btnSubmit = document.querySelector("#button");
+
 firebase.initializeApp(firebaseConfig);
 
 var guest = firebase.database().ref('my-party-list');
 
-document.querySelector("#button").addEventListener("click", saveData);
+btnSubmit.addEventListener("click", saveData);
 
 function saveData(e) {
     e.preventDefault();

@@ -229,4 +229,9 @@ body {
         gap: 0.1rem;
         margin-bottom: 10px;
     }
+
+    .success-container img {
+        margin-top: 40px;
+        max-width: 400px;
+    }
 }
