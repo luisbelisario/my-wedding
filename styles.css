@@ -31,7 +31,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #000;
-
     padding: 20px;
 }
 
@@ -162,6 +161,28 @@ body {
     border-radius: 6px;
 }
 
+/* SUCCESS STYLES */
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container img {
+    margin-top: 40px;
+    max-width: 300px;
+}
+
+.success-container p {
+    max-width: 300px;
+    margin-top: 80px;
+    font-family: Catamaran, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
 /* CONTAINER FOOTER */
 
 .footer-container {
@@ -175,4 +196,37 @@ body {
 .footer-container img {
     margin-right: 20px;
     max-width: 100px;
+}
+
+@media (min-width: 400px) { 
+    body {
+        min-width: 500px;
+        max-width: 1800px;
+        min-height: 100vh;
+        background-position: 1px;
+    }
+
+    .text-container {
+        min-width: 800px;
+        margin-top: 380px;
+    }
+
+    .text-container h1 {
+        font-size: 4rem;
+    }
+
+    .form-container {
+        font-size: 15px;
+    }
+
+    .input-group {
+        min-width: 450px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        margin-bottom: 10px;
+    }
 }

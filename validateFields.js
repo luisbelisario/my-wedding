@@ -1,28 +1,28 @@
-const requiredFields = document.querySelectorAll("[required]");
+const requiredField = document.querySelector("[required]");
 
-requiredFields.forEach((field) => {
-    field.addEventListener("blur", () => validate(field));
-});
+const submitButton = document.querySelector("#button");
 
-function validate(field) {
-    if(field.className == 'name') {
-        validateName(field);
+submitButton.onclick = validateNameLoad;
+
+requiredField.addEventListener("blur", () => validate(requiredField));
+
+function validate(requiredField) {
+    if(requiredField.className == 'name') {
+        validateName(requiredField);
     }
 }
-
 
 function validateName(name) {
     let message = '';
     let msgErro = name.parentNode.querySelector('.msg-erro-name');
-    const submitButton = document.querySelector("#button");
     if (name.value === '') {
-        message = 'Nome não pode estar vazio';
+        message = 'Seu nome não pode estar vazio.';
         msgErro.textContent = message;
         submitButton.disabled = true;
         submitButton.style.cursor = 'not-allowed';
     }
-    else if(name.value.length < 3) {
-        message = 'Nome inválido';
+    else if(name.value.length < 10) {
+        message = 'Nome inválido. Insira seu nome completo.';
         msgErro.textContent = message;
         submitButton.disabled = true;
         submitButton.style.cursor = 'not-allowed';
@@ -34,21 +34,18 @@ function validateName(name) {
     }
 }
 
-function validateRG(rg) {
-    console.log(rg);
-    let message = '';
-    let msgErro = rg.parentNode.querySelector('.msg-erro-rg');
-    console.log(msgErro);
-    const submitButton = document.querySelector("#button");
-    if(rg.value.length < 4 || rg.value.length > 10) {
-        message = 'RG inválido';
+function validateNameLoad() {
+    if (requiredField.value === '') {
+        let msgErro = requiredField.parentNode.querySelector('.msg-erro-name');
+        message = 'Seu nome não pode estar vazio.';
         msgErro.textContent = message;
         submitButton.disabled = true;
         submitButton.style.cursor = 'not-allowed';
-    } else {
-        let message = '';
+    }
+    else if (requiredField.value.length < 10) {
+        message = 'Nome inválido. Insira seu nome completo.';
         msgErro.textContent = message;
-        submitButton.disabled = false;
-        submitButton.style.cursor = 'pointer';
+        submitButton.disabled = true;
+        submitButton.style.cursor = 'not-allowed';
     }
 }
