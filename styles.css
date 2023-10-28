@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Expletus+Sans&family=Niconne&display=swap');
+
+/* GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/images/background2-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    min-height: 900px;
+    background-position: -80px;
+}
+
+/* CONTAINER TEXTO */
+
+.text-container {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-family: Niconne, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.text-container p {
+    font-family: Catamaran, sans-serif;
+    text-align: center;
+    max-width: 180px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.text-container a {
+    margin-top: 15px;
+    text-decoration: underline;
+    font-family: Catamaran, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* CONTAINER FORM */
+
+.input-group {
+    margin-top: 30px;
+    align-self: center;
+    max-width: 320px;
+    background: #DBE1D1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-wrapper input {
+    min-width: 298px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-wrapper span {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Catamaran, sans-serif;;
+    font-size: 14px;
+    color: red;
+}
+
+.input-wrapper p {
+    min-width: 302px;
+    display: block;
+    margin-bottom: 5px;
+    font-family: Catamaran, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+}
+
+.add {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    background: #000;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Catamaran, sans-serif;
+    line-height: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.deleteBtn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0px;
+    width: 120px;
+    height: 46px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Catamaran, sans-serif;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-container button {
+    max-width: 150px;
+    border: none!important;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-family: Catamaran, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 28px;
+    border-radius: 6px;
+}
+
+/* CONTAINER FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-container img {
+    margin-right: 20px;
+    max-width: 100px;
+}
