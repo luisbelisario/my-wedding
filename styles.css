@@ -19,7 +19,8 @@ body {
     background-repeat: no-repeat;
     max-width: 600px;
     min-height: 900px;
-    background-position: -80px;
+    background-position-x: -80px;
+    background-position-y: -80px;
 }
 
 /* CONTAINER TEXTO */
@@ -62,7 +63,7 @@ body {
 /* CONTAINER FORM */
 
 .input-group {
-    margin-top: 30px;
+    margin-top: 60px;
     align-self: center;
     max-width: 320px;
     background: #DBE1D1;
@@ -158,7 +159,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
-    margin-top: 28px;
+    margin-top: 30px;
     border-radius: 6px;
 }
 
@@ -205,7 +206,8 @@ body {
         min-width: 500px;
         max-width: 1800px;
         min-height: 100vh;
-        background-position: 1px;
+        background-position-x: -80px;
+        background-position-y: -80px;
     }
 
     .text-container {
@@ -222,6 +224,7 @@ body {
     }
 
     .input-group {
+        margin-top: 60px;
         min-width: 450px;
     }
 
