@@ -46,12 +46,12 @@ body {
     margin-top: 10px;
     font-family: Catamaran, sans-serif;
     text-align: center;
-    max-width: 250px;
+    max-width: 300px;
     font-weight: lighter;
 }
 
 #local-data {
-    font-size: 18px;
+    font-size: 15.7px;
 }
 
 #pix {
