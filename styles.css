@@ -198,7 +198,8 @@ body {
     max-width: 100px;
 }
 
-@media (min-width: 400px) { 
+
+@media (min-width: 600px) { 
     body {
         min-width: 500px;
         max-width: 1800px;
